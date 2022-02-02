@@ -1,0 +1,59 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	scroll-behavior: smooth;
+}
+
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: "Barlow", "Arial", sans-serif;
+	background-image: url(../images/bgic-img.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.position{
+	display: flex;
+}
+
+img {
+	max-width: 100%;
+	// height: auto;
+	vertical-align: middle;
+  object-fit: cover;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+@media only screen and (max-width:1024px){
+	body{
+		background-size: auto;
+    background-position: top center;
+	}
+}
+
+@media only screen and (max-width:769px){
+	body{
+		background-size: auto;
+    background-position: top center;
+	}
+}
+
+@media only screen and (max-width:426px){
+	body{
+		background-repeat: repeat;
+	}
+}
